@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" href="css/all.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		 <script src="./jquery/jquery.js"></script>
+	</head>
+	<body>
+		<div id="gudin" style="z-index: 2;">
+			
+		
+		<div class="top">
+			<p style="font-size: 16px;color: white;text-align: center; line-height: 35px;">欢迎光临New Balance中国官方商城，新客注册即送350元礼券，新老客下单即享全场包邮！因技术问题暂不支持支付宝支付，请选择微信支付，给您带来的不便敬请谅解.点击查看详情！</p>
+		</div>
+		<script>
+			function enterlist1(){
+
+				location.href  = './list.html'
+			}
+		</script>
+		<div class="spinner">
+			<ul>
+				<li onclick="enterlist1()">男子</li>
+				<li onclick="enterlist1()">女子</li>
+				<li onclick="enterlist1()">男孩</li>
+				<li onclick="enterlist1()">女孩</li>
+			</ul>
+			<div class="xialacai" onclick="enterlist1()">
+				<img src="img/xiala.png"/>
+			</div>
+			<input type="text" name="" id="" value="" placeholder="搜索"/>
+			<p onclick="f1()" class="username1">登入  / 注册</p>
+			<p style="right: 12%;" class="tuichu">退出</p>
+			<script>
+				var tuichu = document.querySelector('.tuichu')
+				tuichu.onclick = function(){
+					delCookie("name")
+					location.reload()
+				}
+				
+			</script>
+			<a href="./gouwuche.html" style="font-size: 14px;">你的购物车</a>
+		</div>
+		</div>
+		<div class="made">
+			
+		</div>
+
+		<div class="goods">
+      <img src="./img/liebiao.png" alt="">
+      <div class="xiezi">	
+        
+        
+      </div>
+			<div class="pagination" style="width: 600px;border: none;"></div>
+    </div>
+		<div class="middle4">
+			<img src="img/dianpu.png"/>
+			<img src="img/dinyue.png"/>
+		</div>
+		<div class="middle5">
+			<img src="img/xiangqing.png"/>
+		</div>
+		<div class="middle6">
+			<img src="img/ppai.png"/>
+		</div>
+		<script src="./js/ajax.js"></script>
+    <script src="./js/cookie.js"></script>
+    
+		<script>
+			function f1 (){
+				location.href  = './login.html'
+
+			}
+			var use2 = document.querySelector('.username1')
+			var name1=getCookie("name")
+//判断姓名是否存在
+if(name1){
+	//转为对象
+	use2.innerHTML = '欢迎'+name1
+}else{
+
+use2.innerHTML = '登入  /  注册'
+}
+function xianqinye(){
+	location.href  = './xianqinye.html?id=21'
+
+}
+// var box1=document.querySelector(".chanpingxqin")
+// box1.onclick = function(e){
+// 	var e = e || window.event
+//     //事件目标的兼容
+//     var target=e.target || e.srcElement
+// 		var c = target.document.querySelector('.id1').innerHTML
+		
+// 		location.href  = `./xianqinye.html?id=${c}`
+		
+// }
+// var 
+		</script>
+		<!-- <script src="../js/jquery-1.11.0.js"></script> -->
+    <!-- <script src="./js/bootstrap.js"></script> -->
+    <script src="./js/pagination.js"></script>
+    <!-- <script src="../js/ajax.js"></script> -->
+    <script src="./js/list.js"></script>
+	</body>
+</html>

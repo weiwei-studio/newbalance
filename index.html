@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/all.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		 <script src="./jquery/jquery.js"></script>
+	</head>
+	<body>
+		<div id="gudin" style="z-index: 2;">
+			
+		
+		<div class="top">
+			<p style="font-size: 16px;color: white;text-align: center; line-height: 35px;">欢迎光临New Balance中国官方商城，新客注册即送350元礼券，新老客下单即享全场包邮！因技术问题暂不支持支付宝支付，请选择微信支付，给您带来的不便敬请谅解.点击查看详情！</p>
+		</div>
+		
+		<div class="spinner" >
+			<ul>
+				<li onclick="enterlist1()">男子</li>
+				<li onclick="enterlist1()">女子</li>
+				<li onclick="enterlist1()">男孩</li>
+				<li onclick="enterlist1()">女孩</li>
+			</ul>
+			<div class="xialacai" onclick="enterlist1()">
+				<img src="img/xiala.png"/>
+			</div>
+			<input type="text" name="" id="" value="" placeholder="搜索"/>
+			<p onclick="f1()" class="username1">登入  / 注册</p>
+			<p style="right: 12%;" class="tuichu">退出</p>
+			<script>
+				var tuichu = document.querySelector('.tuichu')
+				tuichu.onclick = function(){
+					delCookie("name")
+					location.reload()
+				}
+				
+			</script>
+			<script src="./js/cookie.js"></script>
+			<script>
+				function f1 (){
+					location.href  = './login.html'
+
+				}
+				var use2 = document.querySelector('.username1')
+				var name1=getCookie("name")
+//判断姓名是否存在
+if(name1){
+    //转为对象
+    use2.innerHTML = '欢迎'+name1
+}else{
+
+	use2.innerHTML = '登入  /  注册'
+}
+
+			</script>
+			<a href="./gouwuche.html" style="font-size: 14px;">你的购物车</a>
+		</div>
+		</div>
+		<!--<br />-->
+		<div class="rc1300">
+			
+		</div>
+		<br />
+		<div class="list5">
+			<div class="middle1">
+				<ul >
+					<li onclick="enterlist1()">男子</li>
+					<li onclick="enterlist1()">女子</li>
+					<li onclick="enterlist1()">男孩</li>
+					<li onclick="enterlist1()">女孩</li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			function enterlist1(){
+
+				location.href  = './list.html'
+			}
+		</script>
+		<br />
+		<div class="sum">
+			
+		</div>
+		<div class="shoes992">
+			
+		</div>
+		<div class="shoes574">
+			
+		</div>
+		<div class="middle2">
+			<div class="box1">
+				<img src="https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dwe5801bb8/hubs/2021/5yue/327/720-420.jpg"/>
+				<br />
+				<br />
+				<p style="">复古百搭</p>
+				<p style="font-size: 20px; font-weight: bold;">327系列休闲鞋</p>
+				<br />
+				<br />
+				<p style="color: red;">即刻查看 ></p>
+			</div>
+			<div class="box1">
+				<img src="https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dwaa6ad42a/hubs/2020/12yue/237SA/1172%20670.jpg"/>
+				<br />
+				<br />
+				<p style="">简约舒适</p>
+				<p style="font-size: 20px; font-weight: bold;">237系列休闲鞋</p>
+				<br />
+				<br />
+				<p style="color: red;">即刻查看 ></p>
+			</div>
+			<div class="box1">
+				<img src="https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dw10227bff/hubs/2021/4yue/Rebel%20V2/1172-670.jpg"/>
+				<br />
+				<br />
+				<p style="">极速回弹</p>
+				<p style="font-size: 20px; font-weight: bold;">FUELCELL REBEL V2</p>
+				<br />
+				<br />
+				<p style="color: red;">即刻查看 ></p>
+			</div>
+			<div class="box1">
+				<img src="https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dwbe546bfc/hubs/2021/1yue/2WXY/1172-670.jpg"/>
+				<br />
+				<br />
+				<p style="">舒适包裹</p>
+				<p style="font-size: 20px; font-weight: bold;">2WXY系列篮球鞋</p>
+				<br />
+				<br />
+				<p style="color: red;">即刻查看 ></p>
+			</div>
+		</div>
+		<div class="middle3">
+			<img src="https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dwfac606a5/hubs/2021/4yue/nb1992/3840-950.jpg" class="first"/>
+			<img src="https://www.newbalance.com.cn/on/demandware.static/-/Sites-newbalance_cn-Library/zh/dw088b2bfb/hubs/2020/2yue/nb1992/3840-950zt2.jpg" class="second"/>
+			<div class="zuo">
+				<img src="img/zuo.png"/>
+			</div>
+			<div class="you">
+				<img src="img/you.png"/>
+			</div>
+		</div>
+		
+		<script>
+			var a = 0,b = 0;
+			
+			$('.you').click(move)
+			$('.zuo').click(move1)
+//			console.log($('.middle3>img'))
+			
+			function move(){
+				a++
+				if(a>1){
+					a=0
+				}
+				$('.middle3>img').eq(a).css("left","100%")
+				$('.middle3>img').eq(a).animate({left: 0},500)
+				$('.middle3>img').eq(b).animate({left: -1920},500)
+				b=a
+				
+			}
+			
+			
+			function move1(){
+				a--
+				if(a<0){
+					a=1
+				}
+				$('.middle3>img').eq(a).css("left","-100%")
+				$('.middle3>img').eq(a).animate({left:0},500)
+				$('.middle3>img').eq(b).animate({left: 1920},500)
+				b=a
+				
+			}
+			var dsq=setInterval(move,3000)
+//			$('.middle3').mouseover(clearInterval(dsq))
+$('.middle3').hover(function () { clearInterval(dsq) }, function () { dsq=setInterval(move,2000) })
+		</script>
+		<div class="middle4">
+			<img src="img/dianpu.png"/>
+			<img src="img/dinyue.png"/>
+		</div>
+		<div class="middle5">
+			<img src="img/xiangqing.png"/>
+		</div>
+		<div class="middle6">
+			<img src="img/ppai.png"/>
+
+		</div>
+		<script src="./js/cookie.js"></script>
+	</body>
+</html>
