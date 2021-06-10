@@ -73,7 +73,9 @@ if(search1){
         </div>
         <br>
         <div class="jiezhang">
-          <p style="text-align: center;line-height: 55px;">结账</p>
+          <p style="text-align: center;line-height: 55px;">
+          <a href="./gouwuche.html" >结账</a>
+          </p>
         </div>
       </div>
 		
